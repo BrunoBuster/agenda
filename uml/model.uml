@@ -1,2 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_FH8jwEszEeWI1vT-mBvzOA" name="NewModel"/>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_FH8jwEszEeWI1vT-mBvzOA" name="Agenda">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_aN97QEszEeWI1vT-mBvzOA" name="Usuário"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_cDq4oEszEeWI1vT-mBvzOA" name="Manter Contato"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fMNW4EszEeWI1vT-mBvzOA" memberEnd="_fMUroEszEeWI1vT-mBvzOA _fMVSsEszEeWI1vT-mBvzOA">
+    <ownedEnd xmi:id="_fMUroEszEeWI1vT-mBvzOA" type="_cDq4oEszEeWI1vT-mBvzOA" association="_fMNW4EszEeWI1vT-mBvzOA"/>
+    <ownedEnd xmi:id="_fMVSsEszEeWI1vT-mBvzOA" type="_aN97QEszEeWI1vT-mBvzOA" association="_fMNW4EszEeWI1vT-mBvzOA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_kkTAcEs0EeWI1vT-mBvzOA" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_lwJIgEs0EeWI1vT-mBvzOA" name="brunobuster">
+      <packagedElement xmi:type="uml:Package" xmi:id="_qJfuYEs0EeWI1vT-mBvzOA" name="agenda">
+        <packagedElement xmi:type="uml:Package" xmi:id="_L_NhEEs0EeWI1vT-mBvzOA" name="model">
+          <packagedElement xmi:type="uml:Class" xmi:id="_-CRFEEszEeWI1vT-mBvzOA" name="Contato">
+            <ownedAttribute xmi:id="_CdYlgEs0EeWI1vT-mBvzOA" name="nome"/>
+            <ownedAttribute xmi:id="_E67mAEs0EeWI1vT-mBvzOA" name="telefone"/>
+            <ownedAttribute xmi:id="_G_FPEEs0EeWI1vT-mBvzOA" name="endereco"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_0f46cEs0EeWI1vT-mBvzOA" name="business"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_7jKv8Es0EeWI1vT-mBvzOA" name="vo"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="__pd28Es0EeWI1vT-mBvzOA" name="util"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

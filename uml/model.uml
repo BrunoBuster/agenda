@@ -11,9 +11,25 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_qJfuYEs0EeWI1vT-mBvzOA" name="agenda">
         <packagedElement xmi:type="uml:Package" xmi:id="_L_NhEEs0EeWI1vT-mBvzOA" name="model">
           <packagedElement xmi:type="uml:Class" xmi:id="_-CRFEEszEeWI1vT-mBvzOA" name="Contato">
+            <ownedAttribute xmi:id="_kkMoEEtbEeWCMKKDzCkjQw" name="id"/>
             <ownedAttribute xmi:id="_CdYlgEs0EeWI1vT-mBvzOA" name="nome"/>
             <ownedAttribute xmi:id="_E67mAEs0EeWI1vT-mBvzOA" name="telefone"/>
             <ownedAttribute xmi:id="_G_FPEEs0EeWI1vT-mBvzOA" name="endereco"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_aj618EtbEeWCMKKDzCkjQw" name="Grupo">
+            <ownedAttribute xmi:id="_eZDUcEtbEeWCMKKDzCkjQw" name="id"/>
+            <ownedAttribute xmi:id="_g2g1YEtbEeWCMKKDzCkjQw" name="nome"/>
+            <ownedAttribute xmi:id="_iLu74EtbEeWCMKKDzCkjQw" name="descricao"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_4GIWoEtbEeWCMKKDzCkjQw" name="gruposToContatos" memberEnd="_4GI9sEtbEeWCMKKDzCkjQw _4GLZ8EtbEeWCMKKDzCkjQw" navigableOwnedEnd="_4GLZ8EtbEeWCMKKDzCkjQw">
+            <ownedEnd xmi:id="_4GI9sEtbEeWCMKKDzCkjQw" name="grupos" type="_aj618EtbEeWCMKKDzCkjQw" aggregation="shared" association="_4GIWoEtbEeWCMKKDzCkjQw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4GKL0EtbEeWCMKKDzCkjQw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4GKy4EtbEeWCMKKDzCkjQw" value="1"/>
+            </ownedEnd>
+            <ownedEnd xmi:id="_4GLZ8EtbEeWCMKKDzCkjQw" name="contatos" type="_-CRFEEszEeWI1vT-mBvzOA" association="_4GIWoEtbEeWCMKKDzCkjQw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4GMBAEtbEeWCMKKDzCkjQw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4GMoEEtbEeWCMKKDzCkjQw" value="*"/>
+            </ownedEnd>
           </packagedElement>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_0f46cEs0EeWI1vT-mBvzOA" name="business"/>
@@ -22,4 +38,12 @@
       </packagedElement>
     </packagedElement>
   </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DI4SYEtcEeWCMKKDzCkjQw" name="Manter Grupo">
+    <include xmi:id="_Uv6agEtcEeWCMKKDzCkjQw" addition="_PUSfUEtcEeWCMKKDzCkjQw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Hz4o8EtcEeWCMKKDzCkjQw" memberEnd="_Hz4o8UtcEeWCMKKDzCkjQw _Hz5QAEtcEeWCMKKDzCkjQw">
+    <ownedEnd xmi:id="_Hz4o8UtcEeWCMKKDzCkjQw" type="_DI4SYEtcEeWCMKKDzCkjQw" association="_Hz4o8EtcEeWCMKKDzCkjQw"/>
+    <ownedEnd xmi:id="_Hz5QAEtcEeWCMKKDzCkjQw" type="_aN97QEszEeWI1vT-mBvzOA" association="_Hz4o8EtcEeWCMKKDzCkjQw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_PUSfUEtcEeWCMKKDzCkjQw" name="Adicionar Contatos"/>
 </uml:Model>
